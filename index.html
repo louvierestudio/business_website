@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUVIERE STUDIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="nav-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">LOUVIERE STUDIO</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="navHome">HOME</a></li>
+                    <li><a href="portfolio.html" data-i18n="navPortfolio">PORTFOLIO</a></li>
+                    <li><a href="contact.html" data-i18n="navContact">CONTACT</a></li>
+                    <li class="language-selector">
+                        <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="true"
+                            aria-expanded="false" aria-label="Select language" data-i18n-aria-label="languageToggleAria">
+                            <span class="language-icon" aria-hidden="true">🌐</span>
+                            <span class="language-current" id="language-current">EN</span>
+                            <span class="language-caret" aria-hidden="true">▾</span>
+                        </button>
+                        <div class="language-menu" id="language-menu" role="menu" aria-label="Language options"
+                            data-i18n-aria-label="languageMenuAria">
+                            <button class="language-option active" type="button" role="menuitemradio"
+                                aria-checked="true" data-lang-option="en">
+                                <span class="lang-badge en">EN</span>
+                                <span data-i18n="langEnglish">English</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                            <button class="language-option" type="button" role="menuitemradio" aria-checked="false"
+                                data-lang-option="es">
+                                <span class="lang-badge es">ES</span>
+                                <span data-i18n="langSpanish">Español</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero-content">
+            <hr class="separator top">
+            <div class="hero-title-wrapper">
+                <div class="hero-emoji-float hero-emoji-1">✨</div>
+                <div class="hero-emoji-float hero-emoji-2">🔥</div>
+                <div class="hero-emoji-float hero-emoji-3">😎</div>
+                <div class="hero-emoji-float hero-emoji-4">📱</div>
+                <div class="hero-emoji-float hero-emoji-5">💡</div>
+                <div class="hero-emoji-float hero-emoji-6">🚀</div>
+                <h1 data-i18n="heroTitle">WE MAKE SOCIAL MEDIA FILTERS FOR YOUR BUSINESS</h1>
+            </div>
+            <hr class="separator bottom">
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <img src="PLAYA1.gif" alt="AR Filter on Phone" class="phone-image" data-i18n-alt="phoneAlt">
+            </div>
+            <div class="about-text-content">
+                <span class="subheading" data-i18n="aboutUs">about us</span>
+                <h2 data-i18n="aboutTitle">We create digital experiences that bring brands closer to their audiences</h2>
+                <p data-i18n="aboutText">Custom TikTok & Snapchat designed to boost engagement,
+                    increase brand visibility, and turn audiences into customers.</p>
+                <div class="benefits-container">
+                    <span class="subheading centered-subheading" data-i18n="benefitsLabel">Benefits:</span>
+                    <div class="benefits-grid">
+                        <div class="benefit-item" data-i18n="benefitEngagement">Boost engagement</div>
+                        <div class="benefit-item" data-i18n="benefitAwareness">Increase brand awareness</div>
+                        <div class="benefit-item" data-i18n="benefitViral">Create viral moments</div>
+                        <div class="benefit-item" data-i18n="benefitCampaigns">Launch memorable campaigns</div>
+                        <div class="benefit-item" data-i18n="benefitUgc">Drive user-generated content</div>
+                        <div class="benefit-item" data-i18n="benefitStandOut">Stand out from competitors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-card-section">
+        <div class="explore-btn-wrapper" style="margin-top: 0; margin-bottom: -40px;">
+            <div class="explore-btn" style="cursor: default;" data-i18n="showcaseTitle">A showcase of our work</div>
+        </div>
+        <div class="info-card-wrapper">
+            <!-- Floating emojis -->
+            <div class="emoji-float emoji-1">🎬</div>
+            <div class="emoji-float emoji-2">💎</div>
+            <div class="emoji-float emoji-3">🔮</div>
+            <div class="emoji-float emoji-4">🚀</div>
+            <div class="emoji-float emoji-5">💜</div>
+            <div class="emoji-float emoji-6">📸</div>
+
+            <div class="info-card light-theme">
+                <div class="info-card-video">
+                    <div class="video-placeholder">
+                        <img src="BAKE.gif" alt="Lens Snapchat Showcase" data-i18n-alt="bakeAlt"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+                <div class="info-card-text">
+                    <h2 style="display: flex; align-items: center; gap: 15px;">
+                        <span data-i18n="tiktokFilter">TikTok Filter</span>
+                        <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                            alt="TikTok 3D"
+                            style="width: 45px; height: 45px; object-fit: contain; filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.15));">
+                    </h2>
+                    <p data-i18n="tiktokIntro">TikTok has become one of the world’s most powerful platforms for viral content, audience
+                        engagement, and interactive brand storytelling.
+                        Through custom TikTok Filters, brands can create immersive augmented reality experiences that
+                        encourage participation, boost user-generated content,
+                        and increase organic reach in a creative and highly shareable way.</p>
+
+                    <p data-i18n="tiktokEcosystem">TikTok’s effect ecosystem allows businesses to transform campaigns into interactive moments that
+                        audiences actively
+                        engage with, making brands more memorable and culturally relevant.</p>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokUsers">1B+ users</h4>
+                            <span data-i18n="monthlyWorldwide">monthly active <br>worldwide</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokDailyTime">54.8 mins daily</h4>
+                            <span data-i18n="averageTime">average user time spent <br>per day</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokDiscoveryRate">75% discovery rate</h4>
+                            <span data-i18n="tiktokDiscoveryText">users discover new brands/products on TikTok</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card-wrapper">
+            <!-- Floating emojis for second card (can be customized) -->
+            <div class="emoji-float emoji-1">✨</div>
+            <div class="emoji-float emoji-2">🎨</div>
+            <div class="emoji-float emoji-3">🔥</div>
+            <div class="emoji-float emoji-4">🌟</div>
+            <div class="emoji-float emoji-5">📱</div>
+            <div class="emoji-float emoji-6">🎵</div>
+
+            <div class="info-card">
+                <div class="info-card-video">
+                    <div class="video-placeholder">
+                        <img src="LENS1.gif" alt="Snapchat Showcase" data-i18n-alt="snapchatAlt"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+                <div class="info-card-text">
+                    <h2 style="display: flex; align-items: center; gap: 15px;">
+                        <span data-i18n="snapchatFilter">Snapchat Filter</span>
+                        <img src="https://img.icons8.com/fluency/512/snapchat.png" alt="Snapchat Icon"
+                            style="width: 45px; height: 45px; object-fit: contain; filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.15));">
+                    </h2>
+                    <p data-i18n="snapchatIntro">Snapchat remains one of the leading platforms
+                        for augmented reality experiences, giving brands
+                        a powerful way to connect with audiences through interactive
+                        and immersive content.</p>
+
+                    <p data-i18n="snapchatCustom">With custom Snapchat Filters, businesses can create memorable branded
+                        experiences that drive engagement,
+                        encourage sharing, and turn everyday interactions into viral moments.</p>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h4 data-i18n="snapchatUsers">850M+ monthly active users</h4>
+                            <span data-i18n="snapchatAudience">global Snapchat<br>audience</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="snapchatArUsers">300M+ daily AR users</h4>
+                            <span data-i18n="snapchatArText">engaging with augmented <br>reality experiences<br></span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="snapchatAge">75% of 13–34 year olds</h4>
+                            <span data-i18n="snapchatReach">reachable in<br>key markets.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card-wrapper">
+            <!-- Floating emojis for third card (blue theme) -->
+            <div class="emoji-float emoji-1">🦋</div>
+            <div class="emoji-float emoji-2">🌊</div>
+            <div class="emoji-float emoji-3">🧊</div>
+            <div class="emoji-float emoji-4">💎</div>
+            <div class="emoji-float emoji-5">💙</div>
+            <div class="emoji-float emoji-6">🐬</div>
+
+            <div class="info-card blue-theme">
+                <div class="info-card-video">
+                    <div class="video-placeholder">
+                        <img src="SUN.gif" alt="Facebook Filter Showcase" data-i18n-alt="sunAlt"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+                <div class="info-card-text">
+                    <h2 style="display: flex; align-items: center; gap: 15px;">
+                        <span data-i18n="tiktokFilter">TikTok Filter</span>
+                        <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                            alt="TikTok 3D"
+                            style="width: 45px; height: 45px; object-fit: contain; filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.15));">
+                    </h2>
+                    <p data-i18n="tiktokShortIntro">TikTok is one of the world’s most powerful platforms
+                        for viral content, audience engagement,
+                        and interactive brand storytelling.</p>
+
+                    <p data-i18n="tiktokCustom">With custom TikTok Filters,
+                        brands can create immersive augmented reality experiences
+                        that encourage participation, boost user-generated content,
+                        and amplify organic reach through highly shareable interactions.</p>
+
+
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokUsers">1B+ users</h4>
+                            <span data-i18n="monthlyWorldwide">monthly active <br>worldwide</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokMarkets">150+ markets</h4>
+                            <span data-i18n="tiktokPresence">TikTok’s global presence</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="tiktokShopUsers">67% users </h4>
+                            <span data-i18n="tiktokShopping">inspired to shop after seeing TikTok content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+             <div class="explore-btn-wrapper">
+            <a href="portfolio.html" class="explore-btn" data-i18n="explorePortfolio">Explore Our Full Portfolio</a>
+        </div>
+    </section>
+
+    <section class="clients-section">
+        <h3 class="clients-title" data-i18n="clientsTitle">SOME OF OUR CLIENTS</h3>
+
+        <div class="carousel-container">
+            <button class="carousel-nav-btn prev" id="carousel-prev" aria-label="Previous Slide"
+                data-i18n-aria-label="previousSlide">←</button>
+            
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Card 1: Meta -->
+                    <div class="carousel-card blue-theme">
+                        <div class="card-header">
+                            
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <div class="client-logo meta-logo text-logo">
+                                <img src="https://cdn.simpleicons.org/meta/fff" alt="Meta" style="width: 38px; height: 38px; max-height: 38px !important;">
+                                <span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -0.8px; margin-left: 4px;">META</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Meta Platforms</h4>
+                            <p class="card-description" data-i18n="metaDescription">Custom interactive filters reaching millions of active users
+                                across Facebook & Instagram.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Marina Flamingo -->
+                    <div class="carousel-card marina-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="marina-flamingo-logo" src="marina-flamingo-logo-white-original.png" alt="Marina Flamingo Costa Rica">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Marina Flamingo</h4>
+                            <p class="card-description" data-i18n="marinaDescription">Custom interactive experiences for a world-class coastal
+                                destination in Costa Rica.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Novacomp -->
+                    <div class="carousel-card red-theme">
+                        <div class="card-header">
+                           
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="novacomp-logo" src="novacomp-logo.webp" alt="Novacomp">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Novacomp</h4>
+                            <p class="card-description" data-i18n="novacompDescription">Technology consulting and custom digital solutions for smarter
+                                business decisions.</p>
+                           
+                        </div>
+                    </div>
+
+                    <!-- Card 4: FIFCO -->
+                    <div class="carousel-card fifco-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="fifco-logo" src="fifco-logo.png" alt="FIFCO">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Florida Ice and Farm Company</h4>
+                            <p class="card-description" data-i18n="fifcoDescription">Interactive brand experiences for a leading beverage and food
+                                company</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Cooperativa Dos Pinos -->
+                    <div class="carousel-card dospinos-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="dospinos-logo" src="dospinos-logo.png" alt="Cooperativa Dos Pinos">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Dos Pinos</h4>
+                            <p class="card-description" data-i18n="dospinosDescription">Branded interactive experiences for a dairy and
+                                food company.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Maison Kayser -->
+                    <div class="carousel-card maison-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="maison-kayser-logo" src="maison-kayser-logo.png" alt="Maison Kayser">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Maison Kayser</h4>
+                            <p class="card-description" data-i18n="maisonDescription">Interactive digital experiences for a French bakery and
+                                restaurant brand in Mexico.</p>
+                           
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Nutrisa -->
+                    <div class="carousel-card nutrisa-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="nutrisa-logo" src="nutrisa-logo.png" alt="Nutrisa">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Nutrisa</h4>
+                            <p class="card-description" data-i18n="nutrisaDescription">Interactive digital experiences for a Mexican wellness and
+                                frozen yogurt brand.</p>
+                           
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Cuprum -->
+                    <div class="carousel-card cuprum-theme">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="cuprum-logo" src="cuprum-logo.png" alt="Cuprum">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Cuprum</h4>
+                            <p class="card-description" data-i18n="cuprumDescription">Interactive digital experiences for a leading aluminum
+                                products company in Mexico.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Meyer Canada -->
+                    <a class="carousel-card meyer-theme" href="https://meyercanada.ca/" target="_blank" rel="noopener noreferrer">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="meyer-logo" src="meyer-logo.png" alt="Meyer Canada">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Meyer Canada</h4>
+                            <p class="card-description" data-i18n="meyerDescription">Interactive digital experiences for a canadian cookware
+                                manufacturer.</p>
+                      
+                        </div>
+                    </a>
+
+                    <!-- Card 10: Hexaware -->
+                    <a class="carousel-card hexaware-theme" href="https://hexaware.com/" target="_blank" rel="noopener noreferrer">
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-logo-container">
+                            <img class="hexaware-logo" src="hexaware-logo.svg" alt="Hexaware">
+                        </div>
+                        <div class="card-info">
+                            <h4 class="card-title">Hexaware</h4>
+                            <p class="card-description" data-i18n="hexawareDescription">Digital and technology experiences for an AI-first global
+                                services company.</p>
+                          
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-nav-btn next" id="carousel-next" aria-label="Next Slide"
+                data-i18n-aria-label="nextSlide">→</button>
+        </div>
+    </section>
+
+    <footer
+        style="padding: 40px 20px; text-align: center; font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(18, 30, 49, 0.5); letter-spacing: 1px; background: linear-gradient(135deg, #c5d6ff 0%, #d8e5fa 100%);">
+        <span data-i18n="footerRights">&copy; 2026 LOUVIERE STUDIO. ALL RIGHTS RESERVED.</span>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    pageTitle: 'LOUVIERE STUDIO',
+                    navHome: 'HOME',
+                    navPortfolio: 'PORTFOLIO',
+                    navContact: 'CONTACT',
+                    languageToggleAria: 'Select language',
+                    languageMenuAria: 'Language options',
+                    langEnglish: 'English',
+                    langSpanish: 'Español',
+                    heroTitle: 'WE MAKE SOCIAL MEDIA FILTERS FOR YOUR BUSINESS',
+                    phoneAlt: 'AR Filter on Phone',
+                    aboutUs: 'about us',
+                    aboutTitle: 'We create digital experiences that bring brands closer to their audiences',
+                    aboutText: 'Custom TikTok & Snapchat designed to boost engagement, increase brand visibility, and turn audiences into customers.',
+                    benefitsLabel: 'Benefits:',
+                    benefitEngagement: 'Boost engagement',
+                    benefitAwareness: 'Increase brand awareness',
+                    benefitViral: 'Create viral moments',
+                    benefitCampaigns: 'Launch memorable campaigns',
+                    benefitUgc: 'Drive user-generated content',
+                    benefitStandOut: 'Stand out from competitors',
+                    showcaseTitle: 'A showcase of our work',
+                    bakeAlt: 'Lens Snapchat Showcase',
+                    tiktokFilter: 'TikTok Filter',
+                    tiktokIntro: 'TikTok has become one of the world’s most powerful platforms for viral content, audience engagement, and interactive brand storytelling. Through custom TikTok Filters, brands can create immersive augmented reality experiences that encourage participation, boost user-generated content, and increase organic reach in a creative and highly shareable way.',
+                    tiktokEcosystem: 'TikTok’s effect ecosystem allows businesses to transform campaigns into interactive moments that audiences actively engage with, making brands more memorable and culturally relevant.',
+                    tiktokUsers: '1B+ users',
+                    monthlyWorldwide: 'monthly active <br>worldwide',
+                    tiktokDailyTime: '54.8 mins daily',
+                    averageTime: 'average user time spent <br>per day',
+                    tiktokDiscoveryRate: '75% discovery rate',
+                    tiktokDiscoveryText: 'users discover new brands/products on TikTok',
+                    snapchatAlt: 'Snapchat Showcase',
+                    snapchatFilter: 'Snapchat Filter',
+                    snapchatIntro: 'Snapchat remains one of the leading platforms for augmented reality experiences, giving brands a powerful way to connect with audiences through interactive and immersive content.',
+                    snapchatCustom: 'With custom Snapchat Filters, businesses can create memorable branded experiences that drive engagement, encourage sharing, and turn everyday interactions into viral moments.',
+                    snapchatUsers: '850M+ monthly active users',
+                    snapchatAudience: 'global Snapchat<br>audience',
+                    snapchatArUsers: '300M+ daily AR users',
+                    snapchatArText: 'engaging with augmented <br>reality experiences<br>',
+                    snapchatAge: '75% of 13–34 year olds',
+                    snapchatReach: 'reachable in<br>key markets.',
+                    sunAlt: 'Facebook Filter Showcase',
+                    tiktokShortIntro: 'TikTok is one of the world’s most powerful platforms for viral content, audience engagement, and interactive brand storytelling.',
+                    tiktokCustom: 'With custom TikTok Filters, brands can create immersive augmented reality experiences that encourage participation, boost user-generated content, and amplify organic reach through highly shareable interactions.',
+                    tiktokMarkets: '150+ markets',
+                    tiktokPresence: 'TikTok’s global presence',
+                    tiktokShopUsers: '67% users',
+                    tiktokShopping: 'inspired to shop after seeing TikTok content',
+                    explorePortfolio: 'Explore Our Full Portfolio',
+                    clientsTitle: 'SOME OF OUR CLIENTS',
+                    previousSlide: 'Previous Slide',
+                    nextSlide: 'Next Slide',
+                    metaDescription: 'Custom interactive filters reaching millions of active users across Facebook & Instagram.',
+                    marinaDescription: 'Custom interactive experiences for a world-class coastal destination in Costa Rica.',
+                    novacompDescription: 'Technology consulting and custom digital solutions for smarter business decisions.',
+                    fifcoDescription: 'Interactive brand experiences for a leading beverage and food company',
+                    dospinosDescription: 'Branded interactive experiences for a dairy and food company.',
+                    maisonDescription: 'Interactive digital experiences for a French bakery and restaurant brand in Mexico.',
+                    nutrisaDescription: 'Interactive digital experiences for a Mexican wellness and frozen yogurt brand.',
+                    cuprumDescription: 'Interactive digital experiences for a leading aluminum products company in Mexico.',
+                    meyerDescription: 'Interactive digital experiences for a canadian cookware manufacturer.',
+                    hexawareDescription: 'Digital and technology experiences for an AI-first global services company.',
+                    footerRights: '&copy; 2026 LOUVIERE STUDIO. ALL RIGHTS RESERVED.'
+                },
+                es: {
+                    pageTitle: 'LOUVIERE STUDIO',
+                    navHome: 'INICIO',
+                    navPortfolio: 'PORTAFOLIO',
+                    navContact: 'CONTACTO',
+                    languageToggleAria: 'Seleccionar idioma',
+                    languageMenuAria: 'Opciones de idioma',
+                    langEnglish: 'Inglés',
+                    langSpanish: 'Español',
+                    heroTitle: 'CREAMOS FILTROS PARA REDES SOCIALES PARA TU NEGOCIO',
+                    phoneAlt: 'Filtro de realidad aumentada en un teléfono',
+                    aboutUs: 'acerca de nosotros',
+                    aboutTitle: 'Creamos experiencias digitales que acercan las marcas a sus audiencias',
+                    aboutText: 'Filtros personalizados para TikTok y Snapchat diseñados para impulsar la interacción, aumentar la visibilidad de marca y convertir audiencias en clientes.',
+                    benefitsLabel: 'Beneficios:',
+                    benefitEngagement: 'Impulsa la interacción',
+                    benefitAwareness: 'Aumenta el reconocimiento de marca',
+                    benefitViral: 'Crea momentos virales',
+                    benefitCampaigns: 'Lanza campañas memorables',
+                    benefitUgc: 'Genera contenido creado por usuarios',
+                    benefitStandOut: 'Destaca frente a la competencia',
+                    showcaseTitle: 'Una muestra de nuestro trabajo',
+                    bakeAlt: 'Muestra de filtro para Snapchat',
+                    tiktokFilter: 'Filtro de TikTok',
+                    tiktokIntro: 'TikTok se ha convertido en una de las plataformas más poderosas del mundo para contenido viral, interacción con audiencias y narrativa de marca interactiva. Con filtros personalizados de TikTok, las marcas pueden crear experiencias inmersivas de realidad aumentada que fomentan la participación, impulsan el contenido generado por usuarios y aumentan el alcance orgánico de una forma creativa y muy fácil de compartir.',
+                    tiktokEcosystem: 'El ecosistema de efectos de TikTok permite a las empresas transformar campañas en momentos interactivos en los que las audiencias participan activamente, haciendo que las marcas sean más memorables y culturalmente relevantes.',
+                    tiktokUsers: '1B+ usuarios',
+                    monthlyWorldwide: 'activos mensuales <br>en todo el mundo',
+                    tiktokDailyTime: '54.8 min diarios',
+                    averageTime: 'tiempo promedio de uso <br>por día',
+                    tiktokDiscoveryRate: '75% de descubrimiento',
+                    tiktokDiscoveryText: 'usuarios descubren nuevas marcas/productos en TikTok',
+                    snapchatAlt: 'Muestra de Snapchat',
+                    snapchatFilter: 'Filtro de Snapchat',
+                    snapchatIntro: 'Snapchat sigue siendo una de las plataformas líderes para experiencias de realidad aumentada, dando a las marcas una forma poderosa de conectar con audiencias mediante contenido interactivo e inmersivo.',
+                    snapchatCustom: 'Con filtros personalizados de Snapchat, las empresas pueden crear experiencias de marca memorables que impulsan la interacción, motivan a compartir y convierten interacciones cotidianas en momentos virales.',
+                    snapchatUsers: '850M+ usuarios activos mensuales',
+                    snapchatAudience: 'audiencia global<br>de Snapchat',
+                    snapchatArUsers: '300M+ usuarios diarios de RA',
+                    snapchatArText: 'interactuando con experiencias <br>de realidad aumentada<br>',
+                    snapchatAge: '75% de jóvenes de 13 a 34 años',
+                    snapchatReach: 'alcanzables en<br>mercados clave.',
+                    sunAlt: 'Muestra de filtro para Facebook',
+                    tiktokShortIntro: 'TikTok es una de las plataformas más poderosas del mundo para contenido viral, interacción con audiencias y narrativa de marca interactiva.',
+                    tiktokCustom: 'Con filtros personalizados de TikTok, las marcas pueden crear experiencias inmersivas de realidad aumentada que fomentan la participación, impulsan el contenido generado por usuarios y amplifican el alcance orgánico mediante interacciones muy fáciles de compartir.',
+                    tiktokMarkets: '150+ mercados',
+                    tiktokPresence: 'presencia global de TikTok',
+                    tiktokShopUsers: '67% de usuarios',
+                    tiktokShopping: 'inspirados a comprar después de ver contenido en TikTok',
+                    explorePortfolio: 'Explora todo nuestro portafolio',
+                    clientsTitle: 'ALGUNOS DE NUESTROS CLIENTES',
+                    previousSlide: 'Diapositiva anterior',
+                    nextSlide: 'Siguiente diapositiva',
+                    metaDescription: 'Filtros interactivos personalizados que alcanzan a millones de usuarios activos en Facebook e Instagram.',
+                    marinaDescription: 'Experiencias interactivas personalizadas para un destino costero de clase mundial en Costa Rica.',
+                    novacompDescription: 'Consultoría tecnológica y soluciones digitales personalizadas para decisiones de negocio más inteligentes.',
+                    fifcoDescription: 'Experiencias interactivas de marca para una empresa líder de bebidas y alimentos.',
+                    dospinosDescription: 'Experiencias interactivas de marca para una empresa láctea y de alimentos.',
+                    maisonDescription: 'Experiencias digitales interactivas para una marca francesa de panadería y restaurante en México.',
+                    nutrisaDescription: 'Experiencias digitales interactivas para una marca mexicana de bienestar y yogurt helado.',
+                    cuprumDescription: 'Experiencias digitales interactivas para una empresa líder de productos de aluminio en México.',
+                    meyerDescription: 'Experiencias digitales interactivas para un fabricante canadiense de utensilios de cocina.',
+                    hexawareDescription: 'Experiencias digitales y tecnológicas para una empresa global de servicios centrada en IA.',
+                    footerRights: '&copy; 2026 LOUVIERE STUDIO. TODOS LOS DERECHOS RESERVADOS.'
+                }
+            };
+
+            const languageToggle = document.getElementById('language-toggle');
+            const languageMenu = document.getElementById('language-menu');
+            const languageCurrent = document.getElementById('language-current');
+            const languageOptions = document.querySelectorAll('[data-lang-option]');
+            const translatableElements = document.querySelectorAll('[data-i18n]');
+            const translatedAttributeElements = document.querySelectorAll('[data-i18n-alt], [data-i18n-aria-label]');
+
+            const getSavedLanguage = () => {
+                try {
+                    return window.localStorage.getItem('louviereLanguage');
+                } catch (error) {
+                    return null;
+                }
+            };
+
+            const saveLanguage = (language) => {
+                try {
+                    window.localStorage.setItem('louviereLanguage', language);
+                } catch (error) {
+                    // Ignore storage errors so the selector still works.
+                }
+            };
+
+            const closeLanguageMenu = () => {
+                if (!languageMenu || !languageToggle) {
+                    return;
+                }
+
+                languageMenu.classList.remove('open');
+                languageToggle.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            const setLanguage = (language) => {
+                const activeLanguage = translations[language] ? language : 'en';
+                const dictionary = translations[activeLanguage];
+
+                document.documentElement.lang = activeLanguage;
+                document.title = dictionary.pageTitle;
+
+                translatableElements.forEach((element) => {
+                    const key = element.dataset.i18n;
+
+                    if (dictionary[key]) {
+                        element.innerHTML = dictionary[key];
+                    }
+                });
+
+                translatedAttributeElements.forEach((element) => {
+                    const altKey = element.dataset.i18nAlt;
+                    const ariaKey = element.dataset.i18nAriaLabel;
+
+                    if (altKey && dictionary[altKey]) {
+                        element.setAttribute('alt', dictionary[altKey]);
+                    }
+
+                    if (ariaKey && dictionary[ariaKey]) {
+                        element.setAttribute('aria-label', dictionary[ariaKey]);
+                    }
+                });
+
+                if (languageCurrent) {
+                    languageCurrent.textContent = activeLanguage.toUpperCase();
+                }
+
+                languageOptions.forEach((option) => {
+                    const isActive = option.dataset.langOption === activeLanguage;
+                    option.classList.toggle('active', isActive);
+                    option.setAttribute('aria-checked', String(isActive));
+                });
+
+                saveLanguage(activeLanguage);
+                closeLanguageMenu();
+            };
+
+            if (languageToggle && languageMenu) {
+                languageToggle.addEventListener('click', () => {
+                    const isOpen = languageMenu.classList.toggle('open');
+                    languageToggle.classList.toggle('open', isOpen);
+                    languageToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!languageMenu.contains(event.target) && !languageToggle.contains(event.target)) {
+                        closeLanguageMenu();
+                    }
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        closeLanguageMenu();
+                    }
+                });
+            }
+
+            languageOptions.forEach((option) => {
+                option.addEventListener('click', () => {
+                    setLanguage(option.dataset.langOption);
+                });
+            });
+
+            setLanguage(getSavedLanguage() || 'en');
+
+            const track = document.getElementById('carousel-track');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+
+            if (track && prevBtn && nextBtn) {
+                // Scroll amount is calculated as the width of one card + gap (285px card width + 25px gap = 310px)
+                const scrollAmount = 310;
+
+                prevBtn.addEventListener('click', () => {
+                    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+                    // If we are at the very beginning, wrap around to the end
+                    if (track.scrollLeft <= 5) {
+                        track.scrollTo({
+                            left: maxScrollLeft,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        track.scrollBy({
+                            left: -scrollAmount,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+                    // If we are at the very end, wrap around to the beginning
+                    if (track.scrollLeft >= maxScrollLeft - 5) {
+                        track.scrollTo({
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        track.scrollBy({
+                            left: scrollAmount,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

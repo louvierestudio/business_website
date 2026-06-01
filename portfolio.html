@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUVIERE STUDIO - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="nav-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">LOUVIERE STUDIO</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="navHome">HOME</a></li>
+                    <li><a href="portfolio.html" class="active" data-i18n="navPortfolio">PORTFOLIO</a></li>
+                    <li><a href="contact.html" data-i18n="navContact">CONTACT</a></li>
+                    <li class="language-selector">
+                        <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="true"
+                            aria-expanded="false" aria-label="Select language" data-i18n-aria-label="languageToggleAria">
+                            <span class="language-icon" aria-hidden="true">🌐</span>
+                            <span class="language-current" id="language-current">EN</span>
+                            <span class="language-caret" aria-hidden="true">▾</span>
+                        </button>
+                        <div class="language-menu" id="language-menu" role="menu" aria-label="Language options"
+                            data-i18n-aria-label="languageMenuAria">
+                            <button class="language-option active" type="button" role="menuitemradio"
+                                aria-checked="true" data-lang-option="en">
+                                <span class="lang-badge en">EN</span>
+                                <span data-i18n="langEnglish">English</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                            <button class="language-option" type="button" role="menuitemradio" aria-checked="false"
+                                data-lang-option="es">
+                                <span class="lang-badge es">ES</span>
+                                <span data-i18n="langSpanish">Español</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero-content"
+            style="justify-content: flex-start; margin-top: 60px; transform: none; margin-bottom: 20px;">
+            <h1 data-i18n="portfolioTitle">Selected Projects</h1>
+        </div>
+
+        <section class="portfolio-grid-section">
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN1.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project1Title">Glamour Sunglasses</h3>
+                        <p data-i18n="project1Description">Change the lens color of your sunglasses and try different styles in seconds.
+                            Give your look a modern, fun, and stylish touch.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=daa32c1858c54d988a3da77e219befa4&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="TK_1.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project2Title">FASHION SUNGLASSES</h3>
+                        <p data-i18n="project2Description">Try on stylish sunglasses with bold tinted lenses.
+                            Switch up your look instantly with a sleek, modern fashion effect.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://vt.tiktok.com/ZSxRJwXoC/" target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_2.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN8.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project3Title">REAL COSMETIC MASK</h3>
+                        <p data-i18n="project3Description">Try on a bold cosmetic face mask with a realistic makeup finish.
+                            Add a unique, glowing beauty look to your selfie in seconds.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=698dbfbbd4d04ad1a0c557379ecf3e89&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="TK2.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project4Title">TAP SUNGLASSES</h3>
+                        <p data-i18n="project4Description">Tap the button to instantly change the lens color of your sunglasses.
+                            Try different bold shades and upgrade your look with one simple touch.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://vt.tiktok.com/ZSxRdQaaa/" target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_2.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN5.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project5Title">NEON AURA</h3>
+                        <p data-i18n="project5Description">Turn your video into a glowing neon effect with a vibrant futuristic look.
+                            Add an electric, eye-catching style to your snaps instantly.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=781a493ed63c43dbb31ce68590ae2f13&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN13.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project6Title">CATRINA COSTUME</h3>
+                        <p data-i18n="project6Description">Transform your look with a Día de Muertos Catrina costume, featuring face paint,
+                            a tall hat, and colorful neon decorations.
+                            Celebrate the spirit of the tradition with a bold festive style.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=2591ea1931b24fd2a52f07a722b7f81e&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="TK6.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project7Title">FORTNITE PEELY</h3>
+                        <p data-i18n="project7Description">Step into the world of Fortnite with this Peely costume filter.
+                            Transform your face into the iconic banana character with a fun, detailed mask.
+                            Perfect for gamers and fans of the popular battle royale game.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://vt.tiktok.com/ZSxR8SgTM/" target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_2.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LENS12.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project8Title">SKELETON MAKEUP</h3>
+                        <p data-i18n="project8Description">Transform your look with a stylish skeleton makeup filter.
+                            This lens features detailed face paint and artistic details,
+                            perfect for a bold, fashionable Halloween style.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d1545f63e60140159d502982879e2769&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="TK8.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project9Title">BLUE SUNGLASSES</h3>
+                        <p data-i18n="project9Description">Try on ultra-realistic sunglasses
+                            with bold blue reflective lenses.
+                            Add a sleek, stylish, and modern look
+                            to your TikToks instantly.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://vt.tiktok.com/ZSxF9wK14/" target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_2.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN4.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project10Title">Y2K CAMERA</h3>
+                        <p data-i18n="project10Description">Capture the perfect nostalgic moment with this Y2K Camera filter.
+                            Add a vintage, retro vibe to your selfies
+                            with a classic film camera aesthetic.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=6af8693f4ace4779b25c9575efea2d21&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN15.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project11Title">CLOWN MAKEUP</h3>
+                        <p data-i18n="project11Description">Transform your face with a realistic clown makeup effect for Snapchat. Add a bold, funny,
+                            and eye-catching style to your snaps instantly.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=55b72e55de5c4061a6d9cca2b4f82359&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-video-container" onclick="toggleVideo(this)" style="cursor: pointer;">
+                        <video src="LEN6.mp4" muted playsinline preload="metadata" loop></video>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="portfolio-card-info">
+                        <h3 data-i18n="project12Title">URBAN SUNGLASSES</h3>
+                        <p data-i18n="project12Description">Try on stylish urban sunglasses with bold reflective lenses.
+                            Switch between different lens colors and give your snaps a modern streetwear look.</p>
+                        <div class="try-filter-container"
+                            style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+                            <span style="font-weight: 800; font-size: 28px; color: #222;" data-i18n="tryLabel">TRY</span>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=01e85a0cdd934713aa37a07da86770fb&metadata=01"
+                                target="_blank"
+                                style="display: flex; align-items: center; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <img src="LOGO_1.png" alt="Snapchat"
+                                    style="width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    pageTitle: 'LOUVIERE STUDIO - Portfolio',
+                    navHome: 'HOME',
+                    navPortfolio: 'PORTFOLIO',
+                    navContact: 'CONTACT',
+                    languageToggleAria: 'Select language',
+                    languageMenuAria: 'Language options',
+                    langEnglish: 'English',
+                    langSpanish: 'Español',
+                    portfolioTitle: 'Selected Projects',
+                    tryLabel: 'TRY',
+                    project1Title: 'Glamour Sunglasses',
+                    project1Description: 'Change the lens color of your sunglasses and try different styles in seconds. Give your look a modern, fun, and stylish touch.',
+                    project2Title: 'FASHION SUNGLASSES',
+                    project2Description: 'Try on stylish sunglasses with bold tinted lenses. Switch up your look instantly with a sleek, modern fashion effect.',
+                    project3Title: 'REAL COSMETIC MASK',
+                    project3Description: 'Try on a bold cosmetic face mask with a realistic makeup finish. Add a unique, glowing beauty look to your selfie in seconds.',
+                    project4Title: 'TAP SUNGLASSES',
+                    project4Description: 'Tap the button to instantly change the lens color of your sunglasses. Try different bold shades and upgrade your look with one simple touch.',
+                    project5Title: 'NEON AURA',
+                    project5Description: 'Turn your video into a glowing neon effect with a vibrant futuristic look. Add an electric, eye-catching style to your snaps instantly.',
+                    project6Title: 'CATRINA COSTUME',
+                    project6Description: 'Transform your look with a Día de Muertos Catrina costume, featuring face paint, a tall hat, and colorful neon decorations. Celebrate the spirit of the tradition with a bold festive style.',
+                    project7Title: 'FORTNITE PEELY',
+                    project7Description: 'Step into the world of Fortnite with this Peely costume filter. Transform your face into the iconic banana character with a fun, detailed mask. Perfect for gamers and fans of the popular battle royale game.',
+                    project8Title: 'SKELETON MAKEUP',
+                    project8Description: 'Transform your look with a stylish skeleton makeup filter. This lens features detailed face paint and artistic details, perfect for a bold, fashionable Halloween style.',
+                    project9Title: 'BLUE SUNGLASSES',
+                    project9Description: 'Try on ultra-realistic sunglasses with bold blue reflective lenses. Add a sleek, stylish, and modern look to your TikToks instantly.',
+                    project10Title: 'Y2K CAMERA',
+                    project10Description: 'Capture the perfect nostalgic moment with this Y2K Camera filter. Add a vintage, retro vibe to your selfies with a classic film camera aesthetic.',
+                    project11Title: 'CLOWN MAKEUP',
+                    project11Description: 'Transform your face with a realistic clown makeup effect for Snapchat. Add a bold, funny, and eye-catching style to your snaps instantly.',
+                    project12Title: 'URBAN SUNGLASSES',
+                    project12Description: 'Try on stylish urban sunglasses with bold reflective lenses. Switch between different lens colors and give your snaps a modern streetwear look.'
+                },
+                es: {
+                    pageTitle: 'LOUVIERE STUDIO - Portafolio',
+                    navHome: 'INICIO',
+                    navPortfolio: 'PORTAFOLIO',
+                    navContact: 'CONTACTO',
+                    languageToggleAria: 'Seleccionar idioma',
+                    languageMenuAria: 'Opciones de idioma',
+                    langEnglish: 'Inglés',
+                    langSpanish: 'Español',
+                    portfolioTitle: 'Proyectos Seleccionados',
+                    tryLabel: 'PROBAR',
+                    project1Title: 'Lentes Glamour',
+                    project1Description: 'Cambia el color de los lentes de tus gafas y prueba diferentes estilos en segundos. Dale a tu look un toque moderno, divertido y con estilo.',
+                    project2Title: 'LENTES DE MODA',
+                    project2Description: 'Pruébate lentes de sol con estilo y cristales de colores llamativos. Cambia tu look al instante con un efecto de moda elegante y moderno.',
+                    project3Title: 'MÁSCARA COSMÉTICA REALISTA',
+                    project3Description: 'Pruébate una máscara cosmética audaz con un acabado de maquillaje realista. Agrega a tu selfie un look de belleza único y luminoso en segundos.',
+                    project4Title: 'LENTES CON TOQUE',
+                    project4Description: 'Toca el botón para cambiar al instante el color de los cristales de tus lentes. Prueba diferentes tonos llamativos y mejora tu look con un solo toque.',
+                    project5Title: 'AURA NEÓN',
+                    project5Description: 'Convierte tu video en un efecto neón brillante con un estilo futurista y vibrante. Agrega a tus snaps un toque eléctrico y llamativo al instante.',
+                    project6Title: 'DISFRAZ DE CATRINA',
+                    project6Description: 'Transforma tu look con un disfraz de Catrina de Día de Muertos, con maquillaje facial, sombrero alto y decoraciones neón coloridas. Celebra el espíritu de la tradición con un estilo festivo y audaz.',
+                    project7Title: 'FORTNITE PEELY',
+                    project7Description: 'Entra al mundo de Fortnite con este filtro de disfraz de Peely. Transforma tu rostro en el icónico personaje banana con una máscara divertida y detallada. Perfecto para gamers y fans del popular battle royale.',
+                    project8Title: 'MAQUILLAJE DE ESQUELETO',
+                    project8Description: 'Transforma tu look con un filtro de maquillaje de esqueleto con mucho estilo. Este lente incluye pintura facial detallada y elementos artísticos, perfecto para un estilo de Halloween audaz y moderno.',
+                    project9Title: 'LENTES AZULES',
+                    project9Description: 'Pruébate lentes de sol ultrarrealistas con cristales azules reflejantes. Agrega a tus TikToks un look elegante, moderno y con mucho estilo al instante.',
+                    project10Title: 'CÁMARA Y2K',
+                    project10Description: 'Captura el momento nostálgico perfecto con este filtro de cámara Y2K. Agrega a tus selfies una vibra vintage y retro con una estética clásica de cámara de película.',
+                    project11Title: 'MAQUILLAJE DE PAYASO',
+                    project11Description: 'Transforma tu rostro con un efecto de maquillaje de payaso realista para Snapchat. Agrega a tus snaps un estilo audaz, divertido y llamativo al instante.',
+                    project12Title: 'LENTES URBANOS',
+                    project12Description: 'Pruébate lentes urbanos con estilo y cristales reflejantes llamativos. Cambia entre diferentes colores de cristal y dale a tus snaps un look streetwear moderno.'
+                }
+            };
+
+            const languageToggle = document.getElementById('language-toggle');
+            const languageMenu = document.getElementById('language-menu');
+            const languageCurrent = document.getElementById('language-current');
+            const languageOptions = document.querySelectorAll('[data-lang-option]');
+            const translatableElements = document.querySelectorAll('[data-i18n]');
+            const translatedAttributeElements = document.querySelectorAll('[data-i18n-alt], [data-i18n-aria-label]');
+
+            const getSavedLanguage = () => {
+                try {
+                    return window.localStorage.getItem('louviereLanguage');
+                } catch (error) {
+                    return null;
+                }
+            };
+
+            const saveLanguage = (language) => {
+                try {
+                    window.localStorage.setItem('louviereLanguage', language);
+                } catch (error) {
+                    // Ignore storage errors so the selector still works.
+                }
+            };
+
+            const closeLanguageMenu = () => {
+                if (!languageMenu || !languageToggle) {
+                    return;
+                }
+
+                languageMenu.classList.remove('open');
+                languageToggle.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            const setLanguage = (language) => {
+                const activeLanguage = translations[language] ? language : 'en';
+                const dictionary = translations[activeLanguage];
+
+                document.documentElement.lang = activeLanguage;
+                document.title = dictionary.pageTitle;
+
+                translatableElements.forEach((element) => {
+                    const key = element.dataset.i18n;
+
+                    if (dictionary[key]) {
+                        element.innerHTML = dictionary[key];
+                    }
+                });
+
+                translatedAttributeElements.forEach((element) => {
+                    const altKey = element.dataset.i18nAlt;
+                    const ariaKey = element.dataset.i18nAriaLabel;
+
+                    if (altKey && dictionary[altKey]) {
+                        element.setAttribute('alt', dictionary[altKey]);
+                    }
+
+                    if (ariaKey && dictionary[ariaKey]) {
+                        element.setAttribute('aria-label', dictionary[ariaKey]);
+                    }
+                });
+
+                if (languageCurrent) {
+                    languageCurrent.textContent = activeLanguage.toUpperCase();
+                }
+
+                languageOptions.forEach((option) => {
+                    const isActive = option.dataset.langOption === activeLanguage;
+                    option.classList.toggle('active', isActive);
+                    option.setAttribute('aria-checked', String(isActive));
+                });
+
+                saveLanguage(activeLanguage);
+                closeLanguageMenu();
+            };
+
+            if (languageToggle && languageMenu) {
+                languageToggle.addEventListener('click', () => {
+                    const isOpen = languageMenu.classList.toggle('open');
+                    languageToggle.classList.toggle('open', isOpen);
+                    languageToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!languageMenu.contains(event.target) && !languageToggle.contains(event.target)) {
+                        closeLanguageMenu();
+                    }
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        closeLanguageMenu();
+                    }
+                });
+            }
+
+            languageOptions.forEach((option) => {
+                option.addEventListener('click', () => {
+                    setLanguage(option.dataset.langOption);
+                });
+            });
+
+            setLanguage(getSavedLanguage() || 'en');
+        });
+
+        function toggleVideo(container) {
+            const video = container.querySelector('video');
+            const playIcon = container.querySelector('.play-icon');
+
+            if (video) {
+                if (video.paused) {
+                    video.play();
+                    if (playIcon) playIcon.style.opacity = '0';
+                } else {
+                    video.pause();
+                    if (playIcon) playIcon.style.opacity = '1';
+                }
+            } else {
+                // Para las imágenes (GIFs), simplemente ocultamos/mostramos el ícono
+                if (playIcon) {
+                    playIcon.style.opacity = (playIcon.style.opacity === '0') ? '1' : '0';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

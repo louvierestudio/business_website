@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUVIERE STUDIO - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero contact-hero">
+        <div class="nav-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">LOUVIERE STUDIO</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="navHome">HOME</a></li>
+                    <li><a href="portfolio.html" data-i18n="navPortfolio">PORTFOLIO</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="navContact">CONTACT</a></li>
+                    <li class="language-selector">
+                        <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="true"
+                            aria-expanded="false" aria-label="Select language" data-i18n-aria-label="languageToggleAria">
+                            <span class="language-icon" aria-hidden="true">🌐</span>
+                            <span class="language-current" id="language-current">EN</span>
+                            <span class="language-caret" aria-hidden="true">▾</span>
+                        </button>
+                        <div class="language-menu" id="language-menu" role="menu" aria-label="Language options"
+                            data-i18n-aria-label="languageMenuAria">
+                            <button class="language-option active" type="button" role="menuitemradio"
+                                aria-checked="true" data-lang-option="en">
+                                <span class="lang-badge en">EN</span>
+                                <span data-i18n="langEnglish">English</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                            <button class="language-option" type="button" role="menuitemradio" aria-checked="false"
+                                data-lang-option="es">
+                                <span class="lang-badge es">ES</span>
+                                <span data-i18n="langSpanish">Español</span>
+                                <span class="lang-check" aria-hidden="true">✓</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contact-content">
+            <div class="hero-title-wrapper">
+                <h1 data-i18n="contactTitle">GET IN TOUCH</h1>
+            </div>
+
+            <div class="contact-card">
+                <h2 data-i18n="contactSubtitle">Let's build something together</h2>
+                <p data-i18n="contactText">For collaborations, filters, AR effects,<br>or business inquiries, contact us at:</p>
+
+                <h3 class="contact-email">louvierestudio@gmail.com</h3>
+
+                <a href="mailto:louvierestudio@gmail.com" class="contact-btn">
+                    <span data-i18n="sendEmail">Send Email</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    pageTitle: 'LOUVIERE STUDIO - Contact',
+                    navHome: 'HOME',
+                    navPortfolio: 'PORTFOLIO',
+                    navContact: 'CONTACT',
+                    languageToggleAria: 'Select language',
+                    languageMenuAria: 'Language options',
+                    langEnglish: 'English',
+                    langSpanish: 'Español',
+                    contactTitle: 'GET IN TOUCH',
+                    contactSubtitle: "Let's build something together",
+                    contactText: 'For collaborations, filters, AR effects,<br>or business inquiries, contact us at:',
+                    sendEmail: 'Send Email'
+                },
+                es: {
+                    pageTitle: 'LOUVIERE STUDIO - Contacto',
+                    navHome: 'INICIO',
+                    navPortfolio: 'PORTAFOLIO',
+                    navContact: 'CONTACTO',
+                    languageToggleAria: 'Seleccionar idioma',
+                    languageMenuAria: 'Opciones de idioma',
+                    langEnglish: 'Inglés',
+                    langSpanish: 'Español',
+                    contactTitle: 'PONTE EN CONTACTO',
+                    contactSubtitle: 'Construyamos algo juntos',
+                    contactText: 'Para colaboraciones, filtros, efectos de RA<br>o consultas de negocio, contáctanos en:',
+                    sendEmail: 'Enviar correo'
+                }
+            };
+
+            const languageToggle = document.getElementById('language-toggle');
+            const languageMenu = document.getElementById('language-menu');
+            const languageCurrent = document.getElementById('language-current');
+            const languageOptions = document.querySelectorAll('[data-lang-option]');
+            const translatableElements = document.querySelectorAll('[data-i18n]');
+            const translatedAttributeElements = document.querySelectorAll('[data-i18n-alt], [data-i18n-aria-label]');
+
+            const getSavedLanguage = () => {
+                try {
+                    return window.localStorage.getItem('louviereLanguage');
+                } catch (error) {
+                    return null;
+                }
+            };
+
+            const saveLanguage = (language) => {
+                try {
+                    window.localStorage.setItem('louviereLanguage', language);
+                } catch (error) {
+                    // Ignore storage errors so the selector still works.
+                }
+            };
+
+            const closeLanguageMenu = () => {
+                if (!languageMenu || !languageToggle) {
+                    return;
+                }
+
+                languageMenu.classList.remove('open');
+                languageToggle.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            const setLanguage = (language) => {
+                const activeLanguage = translations[language] ? language : 'en';
+                const dictionary = translations[activeLanguage];
+
+                document.documentElement.lang = activeLanguage;
+                document.title = dictionary.pageTitle;
+
+                translatableElements.forEach((element) => {
+                    const key = element.dataset.i18n;
+
+                    if (dictionary[key]) {
+                        element.innerHTML = dictionary[key];
+                    }
+                });
+
+                translatedAttributeElements.forEach((element) => {
+                    const altKey = element.dataset.i18nAlt;
+                    const ariaKey = element.dataset.i18nAriaLabel;
+
+                    if (altKey && dictionary[altKey]) {
+                        element.setAttribute('alt', dictionary[altKey]);
+                    }
+
+                    if (ariaKey && dictionary[ariaKey]) {
+                        element.setAttribute('aria-label', dictionary[ariaKey]);
+                    }
+                });
+
+                if (languageCurrent) {
+                    languageCurrent.textContent = activeLanguage.toUpperCase();
+                }
+
+                languageOptions.forEach((option) => {
+                    const isActive = option.dataset.langOption === activeLanguage;
+                    option.classList.toggle('active', isActive);
+                    option.setAttribute('aria-checked', String(isActive));
+                });
+
+                saveLanguage(activeLanguage);
+                closeLanguageMenu();
+            };
+
+            if (languageToggle && languageMenu) {
+                languageToggle.addEventListener('click', () => {
+                    const isOpen = languageMenu.classList.toggle('open');
+                    languageToggle.classList.toggle('open', isOpen);
+                    languageToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!languageMenu.contains(event.target) && !languageToggle.contains(event.target)) {
+                        closeLanguageMenu();
+                    }
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        closeLanguageMenu();
+                    }
+                });
+            }
+
+            languageOptions.forEach((option) => {
+                option.addEventListener('click', () => {
+                    setLanguage(option.dataset.langOption);
+                });
+            });
+
+            setLanguage(getSavedLanguage() || 'en');
+        });
+    </script>
+</body>
+
+</html>
